@@ -1,0 +1,71 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+ 
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*.DS_Store
+ 
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+ 
+ 
+# IDE
+*.idea
+*.iml
+ 
+# Generated files
+/web-app/WEB-INF
+build/
+*.[oa]
+*.pyc
+ 
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+ 
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# webpack recommended
+/node_modules
+/test/js
+/test/browsertest/js
+/test/fixtures/temp-*
+/test/temp
+/test/ChangesAndRemovals
+/test/**/dev-defaults.webpack.lock
+/benchmark/js
+/benchmark/fixtures
+/examples/**/dist
+/assembly/**/*.wat
+/assembly/**/*.wasm
+/coverage
+/.nyc_output
+/.jest-cache
+.DS_Store
+*.log
+.idea
+.vscode
+.cache
+.eslintcache
+package-lock.json
