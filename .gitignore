@@ -69,3 +69,6 @@ Backup[ ]of[ ]*.numbers/
 .cache
 .eslintcache
 package-lock.json
+
+# project
+/dist
