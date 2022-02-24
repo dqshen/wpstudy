@@ -4,13 +4,15 @@ const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const options = {};
 
 module.exports = {
+  mode: 'development',
   entry: {
     index: './src/index.js',
     print: './src/print.js',
   },
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({      
-      title: 'Output Management',
+      title: 'Development',
     }),
     new WebpackManifestPlugin(options)
   ],
