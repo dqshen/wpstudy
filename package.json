@@ -28,7 +28,20 @@
     "webpack-manifest-plugin": "^4.1.1",
     "webpack-nano": "^1.1.1"
   },
+  "devDependenciesComments": {
+    "express": "轻量化的前端框架，这里配合dev-middleware调试",
+    "html-webpack-plugin": "自动化生成dist/index.html",
+    "webpack": "webpack本体",
+    "webpack-cli": "webpack命令行工具",
+    "webpack-dev-middleware": "",
+    "webpack-dev-server": "在内存中加载脚本的开发模式调试工具",
+    "webpack-manifest-plugin": "输出源脚本和打包生成脚本的对应清单",
+    "webpack-nano": ""
+  },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "dependenciesComments": {
+    "lodash": "字符串处理工具"
   }
 }
