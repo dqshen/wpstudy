@@ -32,7 +32,7 @@
     "webpack-nano": "^1.1.1"
   },
   "devDependenciesComments": {
-    "express": "轻量化的前端框架，这里配合dev-middleware调试",
+    "express": "轻量化的前端框架,这里配合dev-middleware调试",
     "html-webpack-plugin": "自动化生成dist/index.html",
     "webpack": "webpack本体",
     "webpack-cli": "webpack命令行工具",
