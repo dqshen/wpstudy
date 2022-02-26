@@ -39,7 +39,7 @@
     "webpack-dev-middleware": "",
     "webpack-dev-server": "在内存中加载脚本的开发模式调试工具",
     "webpack-manifest-plugin": "输出源脚本和打包生成脚本的对应清单",
-    "webpack-nano": ""
+    "webpack-nano": "一个简化版的webpack命令行工具,需要所有配置都在webpack.config.js"
   },
   "dependencies": {
     "lodash": "^4.17.21"
