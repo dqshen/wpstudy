@@ -1,15 +1,12 @@
 import printMe from "./print";
 
-function getComponent() {
+async function getComponent() {
   const element = document.createElement('div');
-  return import('lodash')
-    .then(({ default: _ }/* 这里用destructure assignment把import的结果 _ 赋值给default */) => {
-      const element = document.createElement('div');
+  const { default: _ } = await import('lodash');/* 这里用destructure assignment把import的结果 _ 赋值给default */
 
-      element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-      return element;
-    })
-    .catch((error) => 'An error occurred while loading the component');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+ 
+  return element;
 }
 
 getComponent().then((component) => {
