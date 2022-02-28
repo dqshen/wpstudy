@@ -7,7 +7,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    another: './src/another-module.js',
   },
   devServer: {
     static: './dist',
@@ -22,10 +21,5 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, "dist"),
     clean: true,
-  },
-  optimization: {
-    splitChunks: {
-      chunks: 'all', // 配置splitChuncksPlugin处理多个entry依赖相同资源的情况
-    },
   },
 };
