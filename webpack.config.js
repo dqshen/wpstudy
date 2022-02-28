@@ -6,16 +6,8 @@ const options = {};
 module.exports = {
   mode: 'development',
   entry: {
-    index: {
-      import: './src/index.js',
-      dependOn: 'shared',
-    },
-    print: './src/print.js',
-    another: {
-      import: './src/another-module.js',
-      dependOn: 'shared',
-    },
-    shared: 'lodash',
+    index: './src/index.js',
+    another: './src/another-module.js',
   },
   devServer: {
     static: './dist',
@@ -32,6 +24,8 @@ module.exports = {
     clean: true,
   },
   optimization: {
-    runtimeChunk: 'single',// runtimeChunk属性,设置single控制打包时依赖模块(这里是lodash)只生成一个成果脚本
+    splitChunks: {
+      chunks: 'all', // 配置splitChuncksPlugin处理多个entry依赖相同资源的情况
+    },
   },
 };
