@@ -7,6 +7,7 @@ async function getComponent() {
   const { default: _ } = await import('lodash');/* 这里用destructuring assignment把import的结果default重新命名为_, 语法问题详见上面的链接*/
 
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.onclick = printMe.bind(null, 'Hello webpack!');
  
   return element;
 }
